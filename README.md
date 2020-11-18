@@ -1,1 +1,1 @@
-# etch-a-sketch
+Etch-A-Sketch in a 16x16 grid. Press clear to reset the grid with a new grid with a width of 1-100.

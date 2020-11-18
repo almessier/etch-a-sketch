@@ -1,0 +1,25 @@
+:root {
+    --grid-columns: 1;
+    --grid-rows: 1;
+}  
+#grid-container {
+    display: grid;
+    width: 960px;
+    height: 960px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+@keyframes hoverstyle {
+    100% {
+        background: black;
+    }
+}
+.grid-item {
+    animation-name: hoverstyle;
+    animation-duration: 1ms;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.grid-item:hover {
+    animation-play-state: running;
+}
