@@ -19,16 +19,16 @@
       clearGrid(container);
       let gridWidth = getGridWidth();
       createGrid(gridWidth, gridWidth);
-    })
+    });
     function getGridWidth() {
       let userGridWidth = prompt('Enter the width of your grid from 1-100.');
       if (userGridWidth > 0 && userGridWidth <= 100) {
         return userGridWidth;
       } else {
-        alert('Invalid input, setting grid to 16x16.')
+        alert('Invalid input, setting grid to 16x16.');
         return 16;
-      }
-    }
+      };
+    };
     function createGrid(rows, columns) {
       container.style.setProperty('--grid-rows', rows);
       container.style.setProperty('--grid-columns', columns);
@@ -40,7 +40,7 @@
     function clearGrid(container) {
       while (container.firstChild) {
         container.removeChild(container.firstChild);
-      }
-    }
+      };
+    };
   </script>
 </html>
